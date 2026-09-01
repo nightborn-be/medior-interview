@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: steenland-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: steenland
+      POSTGRES_PASSWORD: steenland
+      POSTGRES_DB: steenland
+    ports:
+      - "5433:5432"
+    volumes:
+      - steenland-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U steenland -d steenland"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  steenland-pgdata:
