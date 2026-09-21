@@ -1,0 +1,134 @@
+{
+  "_lisez_moi": "Les 8 commandes de data/inbox/, transcrites telles que le client les a ecrites. Aucune correspondance avec le catalogue n'a ete faite. Les fichiers d'origine (.eml, .pdf, .jpg) restent dans data/inbox/.",
+  "date_de_reception": "2026-08-27",
+  "commandes": [
+    {
+      "id": "01-bakkerij-moens",
+      "fichier_source": "01-bakkerij-moens.eml",
+      "customer_code": "K10014",
+      "client": "Bakkerij Moens",
+      "langue": "nl",
+      "recu_le": "2026-08-27T21:47:12+02:00",
+      "mention_livraison": "voor morgen aub",
+      "lignes": [
+        "2 dozen bloem type 55 (de grote zakken)",
+        "5 kg suiker fijn",
+        "1 x boter blokken, zelfde als vorige week",
+        "vergeet de gist niet, 2 pakjes"
+      ]
+    },
+    {
+      "id": "02-sandwicherie-lepain",
+      "fichier_source": "02-sandwicherie-lepain.eml",
+      "customer_code": "K10027",
+      "client": "Sandwicherie Le Pain",
+      "langue": "fr",
+      "recu_le": "2026-08-27T16:12:38+02:00",
+      "mention_livraison": null,
+      "lignes": [
+        "meme chose que lundi mais sans le jambon",
+        "3 bacs de tomates",
+        "2 seaux de mayonnaise"
+      ]
+    },
+    {
+      "id": "03-hotel-de-lac",
+      "fichier_source": "03-hotel-de-lac.eml",
+      "customer_code": "K10031",
+      "client": "Hotel du Lac",
+      "langue": "fr",
+      "recu_le": "2026-08-27T09:24:05+02:00",
+      "mention_livraison": null,
+      "lignes": [
+        "4 bidons d'huile de tournesol 5 L",
+        "10 kg de riz long grain",
+        "6 boites de tomates pelees 3/1",
+        "2 seaux de mayonnaise 5 L",
+        "5 kg de cafe en grains",
+        "12 briques de lait entier UHT"
+      ]
+    },
+    {
+      "id": "04-broodjeszaak-vermeersch",
+      "fichier_source": "04-broodjeszaak-vermeersch.eml",
+      "customer_code": "K10042",
+      "client": "Broodjeszaak Vermeersch",
+      "langue": "nl",
+      "recu_le": "2026-08-27T11:05:47+02:00",
+      "mention_livraison": "Graag leveren op dinsdag",
+      "lignes": [
+        "3 blokken gekookte ham schouder 2 kg",
+        "2 zakken emmental geraspt 2,5 kg",
+        "4 bakken tomaten 6 kg",
+        "5 pakken sandwichzakjes",
+        "2 emmers mayonaise 5 L"
+      ]
+    },
+    {
+      "id": "05-cantine-scolaire",
+      "fichier_source": "05-cantine-scolaire.eml",
+      "customer_code": "K10056",
+      "client": "Cantine Saint-Joseph",
+      "langue": "fr",
+      "recu_le": "2026-08-27T14:38:20+02:00",
+      "mention_livraison": "Pour une livraison le mardi 1 septembre",
+      "lignes": [
+        "25 kg de frites 10 mm",
+        "10 kg de carottes",
+        "6 boites 3/1 de petits pois et carottes",
+        "4 boites de penne 5 kg",
+        "6 boites de tomates concassees 3/1",
+        "20 briques de lait demi-ecreme"
+      ]
+    },
+    {
+      "id": "06-traiteur-dupont",
+      "fichier_source": "06-bon-de-commande.pdf",
+      "customer_code": "K10063",
+      "client": "Traiteur Dupont",
+      "langue": "fr",
+      "recu_le": "2026-08-27T08:51:02+02:00",
+      "mention_livraison": "Livraison souhaitee : mardi 01/09/2026 - avant 11h00",
+      "lignes": [
+        "TD-014 | Farine de froment T55 - sac 25 kg | 4 | sac",
+        "TD-022 | Beurre plaque 2,5 kg | 6 | piece",
+        "TD-031 | Creme 40% brique 1 L | 24 | brique",
+        "TD-005 | Œufs calibre M - plateau de 30 | 5 | plateau",
+        "TD-047 | Chocolat noir callets 2,5 kg | 2 | sac",
+        "TD-052 | Papier cuisson rouleau 200 m | 3 | rouleau"
+      ]
+    },
+    {
+      "id": "07-bakkerij-claes",
+      "fichier_source": "07-whatsapp.jpg",
+      "customer_code": "K10078",
+      "client": "Bakkerij Claes",
+      "langue": "nl",
+      "recu_le": "2026-08-27T22:03:55+02:00",
+      "mention_livraison": "bestelling donderdag",
+      "lignes": [
+        "25 kg bloem T65",
+        "2 x boter 2,5 kg",
+        "1 doos gist",
+        "5 kg suiker",
+        "3 zakken callets melk"
+      ]
+    },
+    {
+      "id": "08-snackbar-mertens",
+      "fichier_source": "08-snackbar-mertens.eml",
+      "customer_code": "K10085",
+      "client": "Snackbar Mertens",
+      "langue": "nl/fr",
+      "recu_le": "2026-08-27T17:19:41+02:00",
+      "mention_livraison": "voor vrijdag graag",
+      "lignes": [
+        "4 zakken frieten 10 mm",
+        "2 x mayonaise seau 5 L",
+        "un bac de cola",
+        "3 kg sauce andalouze",
+        "1 doos hamburgerbroodjes"
+      ]
+    }
+  ]
+}

@@ -17,4 +17,17 @@ describe("jeu de donnees du repo", () => {
     const files = readdirSync(path.join(root, "data", "inbox"));
     expect(files.filter((f) => f.endsWith(".eml")).length).toBe(8);
   });
+
+  it("chaque commande transcrite pointe vers un fichier existant de data/inbox/", () => {
+    const inbox = new Set(readdirSync(path.join(root, "data", "inbox")));
+    const transcrites = JSON.parse(
+      readFileSync(path.join(root, "data", "lignes-transcrites.json"), "utf-8"),
+    ) as { commandes: { fichier_source: string; lignes: string[] }[] };
+
+    expect(transcrites.commandes).toHaveLength(8);
+    for (const commande of transcrites.commandes) {
+      expect(inbox.has(commande.fichier_source)).toBe(true);
+      expect(commande.lignes.length).toBeGreaterThan(0);
+    }
+  });
 });

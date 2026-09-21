@@ -29,7 +29,7 @@ async function main() {
   step("Chargement des donnees");
   run("pnpm", ["exec", "tsx", "scripts/seed.ts"]);
 
-  step("Verification de l'acces a l'API Anthropic");
+  step("Verification de l'acces a l'API Anthropic (optionnel)");
   run("pnpm", ["exec", "tsx", "scripts/check-anthropic.ts"]);
 
   console.log("\nSetup termine. Lancez `pnpm dev`.");

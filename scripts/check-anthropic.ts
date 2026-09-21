@@ -4,8 +4,9 @@ import { DEFAULT_MODEL, anthropic } from "../lib/anthropic";
 
 async function main() {
   if (!process.env.ANTHROPIC_API_KEY) {
-    console.warn(
-      "ANTHROPIC_API_KEY n'est pas defini dans .env : l'appel au modele n'a pas ete teste.",
+    console.log(
+      "ANTHROPIC_API_KEY n'est pas defini : appel au modele non teste. " +
+        "L'exercice n'en a pas besoin.",
     );
     return;
   }
@@ -26,7 +27,8 @@ async function main() {
 }
 
 main().catch((error) => {
-  console.error("Appel a l'API Anthropic impossible :");
-  console.error(error instanceof Error ? error.message : error);
-  process.exit(1);
+  // La cle est optionnelle : un echec ici ne bloque pas le setup.
+  console.warn("Appel a l'API Anthropic impossible :");
+  console.warn(error instanceof Error ? error.message : error);
+  console.warn("L'exercice n'a pas besoin d'appel a un modele, le setup continue.");
 });
