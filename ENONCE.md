@@ -6,7 +6,7 @@ Exercice développeur medior Nightborn, à faire chez toi.
 | --- | --- |
 | **Effort attendu** | environ 3h |
 | **Délai** | 7 jours calendaires à partir de la réception de ce document |
-| **Outils** | tous, y compris les assistants IA. La façon dont tu les utilises fait partie de ce qu'on regarde |
+| **Outils** | tous, y compris les assistants IA, sauf pour la partie F. La façon dont tu les utilises fait partie de ce qu'on regarde |
 | **Rendu** | un repository GitHub privé, auquel tu nous invites |
 
 **Si tu dépasses 3h30, arrête-toi et note où tu en étais.** Savoir s'arrêter et dire
@@ -177,8 +177,12 @@ Si tu n'as utilisé aucun assistant, dis-le et explique ce choix. C'est une rép
 Rien à voir avec le cas Steenland. On veut savoir ce que tu as déjà construit et comment.
 
 Une page au total, pas plus. Court et précis vaut mieux que long et lisse, et on préfère deux
-expériences réelles à six survolées. **On reviendra sur ce que tu écris là pendant l'entretien**,
-donc ne raconte que des choses que tu peux détailler à voix haute.
+expériences réelles à six survolées.
+
+**C'est la seule partie du rendu qui s'écrit sans assistant IA.** On reviendra sur chacune de
+tes réponses pendant l'entretien, en descendant d'un cran sous ce que tu as écrit : un texte
+que tu n'as pas écrit toi ne tient pas une minute dans cette conversation. Le style et
+l'orthographe ne comptent pas, et un correcteur ou une traduction ne posent aucun problème.
 
 ---
 

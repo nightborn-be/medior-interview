@@ -2,9 +2,26 @@
 
 *Environ 25 minutes. Rien à voir avec le cas Steenland : on parle de ce que tu as déjà construit.*
 
-*Une page au total, pas plus. On préfère court et précis à long et lisse. On reviendra sur ce
-que tu écris ici pendant l'entretien, donc ne raconte que des choses que tu peux détailler à
-voix haute.*
+*Une page au total, pas plus. On préfère court et précis à long et lisse.*
+
+---
+
+## À lire avant de commencer
+
+**Cette partie s'écrit sans assistant IA.** C'est la seule du rendu. Partout ailleurs on
+t'encourage à en utiliser un et on regarde comment tu t'en sers. Ici, on veut tes mots.
+
+Ce n'est pas une règle morale, c'est une règle pratique. On reviendra sur chacune de tes
+réponses pendant l'entretien, et on descendra systématiquement d'un cran sous ce que tu as
+écrit : le chiffre exact, le nom de l'outil, ce qui s'est passé ce jour-là. Un texte que tu
+n'as pas écrit toi ne tient pas une minute dans cette conversation. Tu n'y gagnes rien et tu
+y perds beaucoup.
+
+**On ne juge ni le style ni l'orthographe.** Un correcteur orthographique, ou une traduction si
+le français n'est pas ta langue de travail, ne posent aucun problème. Faire écrire ou
+reformuler le fond par un modèle, si.
+
+Écris seulement des choses que tu peux détailler à voix haute.
 
 ---
 
