@@ -10,6 +10,8 @@ interprétation et aucune recommandation.
 **L'appel a été écourté, le directeur devait partir.** Nous n'avons pas couvert tout ce que
 nous voulions. Ce qui ne figure pas ici n'a pas été abordé.
 
+*English version: [`CLIENT-FACTS.md`](CLIENT-FACTS.md).*
+
 ---
 
 ## Systèmes existants

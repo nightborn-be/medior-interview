@@ -18,6 +18,13 @@ describe("jeu de donnees du repo", () => {
     expect(files.filter((f) => f.endsWith(".eml")).length).toBe(8);
   });
 
+  it("les squelettes de rendu existent dans les deux langues", () => {
+    const fr = readdirSync(path.join(root, "rendu")).filter((f) => f.endsWith(".md"));
+    const en = readdirSync(path.join(root, "answers")).filter((f) => f.endsWith(".md"));
+    expect(fr).toHaveLength(6);
+    expect(en).toHaveLength(6);
+  });
+
   it("chaque commande transcrite pointe vers un fichier existant de data/inbox/", () => {
     const inbox = new Set(readdirSync(path.join(root, "data", "inbox")));
     const transcrites = JSON.parse(

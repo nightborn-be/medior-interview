@@ -4,6 +4,8 @@ Vrai plan, autre client, autre secteur. Il te montre la structure et le niveau d
 attendu sur les critères d'acceptation. **Ne le copie pas ligne par ligne : le cas Steenland
 n'a rien à voir, et dans cet exemple le client avait raison de demander ce qu'il demandait.**
 
+*English version: [`build-plan-example.en.md`](build-plan-example.en.md).*
+
 ---
 
 # Plan de build v1, Rappels de rendez-vous

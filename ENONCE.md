@@ -2,6 +2,8 @@
 
 Exercice développeur medior Nightborn, à faire chez toi.
 
+*English version: [`EXERCISE.md`](EXERCISE.md). Réponds dans la langue que tu préfères.*
+
 | | |
 | --- | --- |
 | **Effort attendu** | environ 3h |

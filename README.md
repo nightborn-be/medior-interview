@@ -4,6 +4,8 @@
 > premier, puis le compte rendu de l'appel client dans [`FAITS-CLIENT.md`](FAITS-CLIENT.md).
 > Tes réponses vont dans le dossier [`rendu/`](rendu/), dont les squelettes sont déjà en place.
 
+*English version: [`README.en.md`](README.en.md).*
+
 Ce README ne documente que la technique : comment démarrer, ce qu'il y a où, quelles commandes
 existent.
 

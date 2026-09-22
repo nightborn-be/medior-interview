@@ -5,6 +5,8 @@ Service informatique
 Référence : SPEC-ERP-IMP-014
 Version 1.3
 
+*English version: [`erp-import-spec.en.md`](erp-import-spec.en.md).*
+
 | Version | Date | Auteur | Objet |
 | --- | --- | --- | --- |
 | 1.0 | 12/11/2009 | J. Baeten | Rédaction initiale |
