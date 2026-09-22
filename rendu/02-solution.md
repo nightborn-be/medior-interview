@@ -1,4 +1,4 @@
-# Partie B — Solution et recommandation
+# Partie B. Solution et recommandation
 
 *Environ 20 minutes.*
 
@@ -7,11 +7,11 @@
 *Deux ou trois options réellement différentes, y compris celle de construire très peu.
 Pour chacune : ce qu'elle fait, un coût et un délai approximatifs.*
 
-### Option 1 —
+### Option 1 :
 
-### Option 2 —
+### Option 2 :
 
-### Option 3 —
+### Option 3 :
 
 ## Ma recommandation
 

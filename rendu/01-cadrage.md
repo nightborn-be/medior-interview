@@ -1,10 +1,10 @@
-# Partie A — Cadrage
+# Partie A. Cadrage
 
 *Environ 20 minutes. Court : une page suffit largement.*
 
 ## 1. Le vrai problème business
 
-*En deux phrases. Pas la demande du client — le problème derrière.*
+*En deux phrases. Pas la demande du client, le problème derrière.*
 
 
 

@@ -1,6 +1,6 @@
 # Compte rendu de l'appel de cadrage
 
-Steenland Foodservice — 2026-08-25, 45 minutes
+Steenland Foodservice, 2026-08-25, 45 minutes
 Présents côté client : le directeur, la responsable du desk commandes.
 Notes prises par l'équipe Nightborn.
 
@@ -48,7 +48,7 @@ catalogue de 8.000 références.
 
 ## Le projet
 
-**D'où vient la deadline d'un mois ?**
+**D'où vient l'échéance d'un mois ?**
 De nulle part de particulier, le directeur veut que ce soit fait dans un mois. Rien n'est
 engagé auprès de qui que ce soit, aucune échéance externe.
 

@@ -1,4 +1,4 @@
-# Partie E — Comment j'ai piloté l'assistant
+# Partie E. Comment j'ai piloté l'assistant
 
 *Environ 10 minutes. Court et honnête.*
 

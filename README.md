@@ -36,7 +36,8 @@ pnpm dev
 L'application écoute sur http://localhost:3000 et affiche la boîte de réception `orders@` : les
 8 commandes de `data/inbox/`, avec leur contenu brut et leurs pièces jointes.
 
-Si un point de plomberie te bloque plus de dix minutes, note-le dans ton rendu et contourne-le.
+Si un problème d'installation te bloque plus de dix minutes, note-le dans ton rendu et
+contourne-le.
 
 ## Contenu du repository
 
@@ -71,10 +72,10 @@ l'en-tête `X-Attachment`.
 
 Base de données (`lib/db/schema.ts`) :
 
-- `customers` — 40 clients. Les expéditeurs des 8 commandes y figurent.
-- `products` — les 300 SKU de `data/catalog.csv`.
-- `order_history` / `order_history_lines` — 6 mois d'historique de commandes.
-- `erp_orders` — lignes avalées par le simulateur d'import de l'ERP.
+- `customers` : 40 clients. Les expéditeurs des 8 commandes y figurent.
+- `products` : les 300 SKU de `data/catalog.csv`.
+- `order_history` / `order_history_lines` : 6 mois d'historique de commandes.
+- `erp_orders` : lignes avalées par le simulateur d'import de l'ERP.
 
 Les commandes d'exemple sont datées du 27 août 2026 et l'historique couvre les six mois qui
 précèdent cette date.

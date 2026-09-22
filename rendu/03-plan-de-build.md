@@ -1,6 +1,6 @@
-# Partie C — Plan de build
+# Partie C. Plan de build
 
-*Environ 40 minutes. Format Nightborn — `docs/annexe-plan-exemple.md` en montre un rempli.*
+*Environ 40 minutes. Format Nightborn. `docs/annexe-plan-exemple.md` en montre un rempli.*
 
 ## En-tête
 
@@ -42,7 +42,7 @@ critique se disent ici, pas dans une section à part.*
 
 ## 5. Planning
 
-### Semaine 1 — *(jours par personne)*
+### Semaine 1 *(jours par personne)*
 
 -
 
@@ -52,7 +52,7 @@ critique se disent ici, pas dans une section à part.*
 
 1.
 
-### Semaine 2 — *(jours par personne)*
+### Semaine 2 *(jours par personne)*
 
 -
 
@@ -60,7 +60,7 @@ critique se disent ici, pas dans une section à part.*
 
 1.
 
-### Semaine 3 — *(jours par personne)*
+### Semaine 3 *(jours par personne)*
 
 -
 
@@ -68,7 +68,7 @@ critique se disent ici, pas dans une section à part.*
 
 1.
 
-### Semaine 4 — *(jours par personne)*
+### Semaine 4 *(jours par personne)*
 
 -
 

@@ -1,4 +1,4 @@
-# Partie D — La tranche et son harness
+# Partie D. Le code et ce qu'il y a autour
 
 *Environ 60 minutes, code compris. C'est la partie qu'on regarde le plus.*
 
@@ -20,12 +20,12 @@
 
 ## Ce que j'ai mis autour du code
 
-*Le harness : contexte donné à l'assistant, scripts, tests, standards, procédures. Où ça vit
-dans le repo, et à quoi chaque pièce sert.*
+*Contexte donné à l'assistant, scripts, tests, standards, procédures. Où ça vit dans le
+repository, et à quoi chaque pièce sert.*
 
 
 
-## Ce que ma tranche ne gère pas
+## Ce que mon code ne gère pas
 
 *Sois précis. Les cas que tu as vus et laissés de côté comptent autant que ceux que tu traites.*
 

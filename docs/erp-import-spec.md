@@ -1,6 +1,6 @@
 # Spécification du dossier d'import de commandes
 
-Document interne — Steenland Foodservice NV
+Document interne, Steenland Foodservice NV
 Service informatique
 Référence : SPEC-ERP-IMP-014
 Version 1.3

@@ -56,7 +56,7 @@ export default function HomePage() {
                 </TableCell>
                 <TableCell className="align-top">
                   {message.attachments.length === 0 ? (
-                    <span className="text-sm text-muted-foreground">—</span>
+                    <span className="text-sm text-muted-foreground">aucune</span>
                   ) : (
                     message.attachments.map((attachment) => (
                       <Badge key={attachment.fileName} variant="secondary" className="mr-1">

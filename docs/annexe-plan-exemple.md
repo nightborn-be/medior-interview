@@ -1,4 +1,4 @@
-# Annexe — Exemple de plan de build
+# Annexe. Exemple de plan de build
 
 Vrai plan, autre client, autre secteur. Il te montre la structure et le niveau de précision
 attendu sur les critères d'acceptation. **Ne le copie pas ligne par ligne : le cas Steenland

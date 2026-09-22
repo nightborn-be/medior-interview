@@ -1,6 +1,6 @@
 # Cas Steenland Foodservice
 
-Nightborn — exercice développeur medior, à faire chez toi.
+Exercice développeur medior Nightborn, à faire chez toi.
 
 | | |
 | --- | --- |
@@ -8,7 +8,6 @@ Nightborn — exercice développeur medior, à faire chez toi.
 | **Délai** | 7 jours calendaires à partir de la réception de ce document |
 | **Outils** | tous, y compris les assistants IA. La façon dont tu les utilises fait partie de ce qu'on regarde |
 | **Rendu** | un repository GitHub privé, auquel tu nous invites |
-| **Ensuite** | un entretien d'une heure où tu défends ce que tu as rendu |
 
 **Si tu dépasses 3 heures, arrête-toi et note où tu en étais.** Savoir s'arrêter et dire
 ce qui reste fait partie de l'exercice. Un rendu incomplet et lucide vaut mieux qu'un rendu
@@ -64,7 +63,7 @@ Savoir dans quelle catégorie tombe chaque trou fait partie de l'exercice.
 
 ## 2. Ce qu'il y a dans le repository
 
-Tout est déjà branché. Tu ne dois pas perdre une minute de plomberie.
+Tout est déjà en place. Tu n'as rien à installer ni à configurer.
 
 | Chemin | Contenu |
 | --- | --- |
@@ -89,7 +88,7 @@ un lecteur de PDF ou d'image.
 
 Cinq fichiers dans `rendu/`, dont les squelettes sont déjà en place, plus le code.
 
-### Partie A — Cadrage *(≈ 20 min)* → `rendu/01-cadrage.md`
+### Partie A. Cadrage *(≈ 20 min)* → `rendu/01-cadrage.md`
 
 Trois choses, courtes :
 
@@ -99,17 +98,17 @@ Trois choses, courtes :
    tu irais le chercher.
 
 Le point 3 compte autant que les deux autres. On cherche une inconnue qui, si elle tombe du
-mauvais côté, change ta décision — pas une liste d'accès à demander. Le compte rendu de
+mauvais côté, change ta décision, pas une liste d'accès à demander. Le compte rendu de
 l'appel ne répond pas à tout : ce qui te manque encore nous intéresse.
 
-### Partie B — Solution et recommandation *(≈ 20 min)* → `rendu/02-solution.md`
+### Partie B. Solution et recommandation *(≈ 20 min)* → `rendu/02-solution.md`
 
 1. Deux ou trois options réellement différentes, y compris l'option de construire très peu.
 2. Un coût et un délai approximatifs par option.
 3. Ta recommandation, et pourquoi les autres perdent.
 4. Ce que tu dirais au directeur commercial, qui a demandé un webshop et une app.
 
-### Partie C — Plan de build *(≈ 40 min)* → `rendu/03-plan-de-build.md`
+### Partie C. Plan de build *(≈ 40 min)* → `rendu/03-plan-de-build.md`
 
 Au format Nightborn. `docs/annexe-plan-exemple.md` t'en montre un exemplaire complet, sur un
 autre client et un autre secteur. Il te montre la structure et le niveau de précision attendu
@@ -128,42 +127,43 @@ pas des intentions.
 deux destinations : le **hors périmètre**, avec la raison, et les **extensions possibles** en
 fin de plan, chiffrées, avec le moment où on décide.
 
-### Partie D — Une tranche de code, et le harness autour *(≈ 60 min)* → code + `rendu/04-tranche.md`
+### Partie D. Du code, et ce que tu mets autour *(≈ 60 min)* → code + `rendu/04-code.md`
 
-**C'est la partie qu'on regarde le plus, et ce n'est pas la feature qu'on note.**
+**C'est la partie qu'on regarde le plus, et ce n'est pas la fonctionnalité qu'on note.**
 
 Tu vas écrire ce code avec un assistant. Nous aussi. Ce qui nous intéresse n'est pas ce que
-l'assistant a produit, c'est **ce que tu as mis autour pour pouvoir lui faire confiance** — et
+l'assistant a produit, c'est **ce que tu as mis autour pour pouvoir lui faire confiance**, et
 pour que quelqu'un d'autre puisse lui faire confiance sans relire ton code ligne par ligne.
 
-Construis une tranche qui part de `data/lignes-transcrites.json` et qui va jusqu'à un résultat
-observable. Quelle tranche, c'est ton choix : prends celle que tu considères comme la plus
-risquée. Elle peut être petite. Elle sera probablement incomplète, c'est prévu.
+Construis quelque chose qui part de `data/lignes-transcrites.json` et qui va jusqu'à un
+résultat observable, sans étape manuelle au milieu. Ce que tu construis, c'est ton choix :
+prends ce que tu considères comme le plus risqué. Ça peut être petit, et ce sera probablement
+incomplet. C'est prévu.
 
-Puis mets-la sous contrôle. À toi de décider ce que ça veut dire ici, mais les formes qu'on
-voit habituellement sont : le contexte que tu donnes à l'assistant et qui vit dans le repo, des
+Puis mets ce code sous contrôle. À toi de décider ce que ça veut dire ici, mais les formes qu'on
+voit habituellement sont : le contexte que tu donnes à l'assistant et qui vit dans le repository, des
 scripts de vérification, des tests appuyés sur une source de vérité, des standards outillés,
-une commande unique qui dit si l'état du repo est bon ou non, des procédures que tu as
+une commande unique qui dit si l'état du repository est bon ou non, des procédures que tu as
 codifiées pour ne pas les réexpliquer à chaque fois.
 
 **Ce que « terminé » veut dire ici :**
 
-1. **Une seule commande.** Quelqu'un qui clone ton repo lance une commande et sait si ce que tu
+1. **Une seule commande.** Quelqu'un qui clone ton repository lance une commande et sait si ce que tu
    annonces est vrai ou faux. Il n'a pas à te croire sur parole ni à lire ton code.
 2. **La vérification s'appuie sur quelque chose de réel.** Une source de vérité du repository,
    pas des assertions que tu as écrites dans le vide pour qu'elles passent.
-3. **Rien ne disparaît en silence.** Tout ce que ta tranche n'a pas su traiter reste visible
+3. **Rien ne disparaît en silence.** Tout ce que ton code n'a pas su traiter reste visible
    dans le résultat, à sa place, et est identifiable par quelqu'un d'autre que toi. Un résultat
    qui a l'air propre parce qu'il a perdu ce qui l'embêtait ne compte pas comme terminé.
-4. **Le contexte que tu donnes à l'assistant est dans le repo**, il est spécifique à ce
-   repository, et il aurait servi à quelqu'un d'autre que toi.
-5. **Tu sais énoncer tes limites** dans `rendu/04-tranche.md` : ce que ta tranche ne gère pas,
-   et ce qui casserait si on changeait les données.
+4. **Le contexte que tu donnes à l'assistant est versionné avec le code**, il est spécifique à
+   ce projet, et il aurait servi à quelqu'un d'autre que toi.
+5. **Tu sais énoncer tes limites** dans `rendu/04-code.md` : ce que ton code ne gère pas, et
+   ce qui casserait si on changeait les données.
 
 Ce qu'on ne demande pas : traiter les 8 commandes, que ce soit joli, une couverture de tests
 complète, la performance, la sécurité, l'authentification.
 
-### Partie E — Comment tu as piloté l'assistant *(≈ 10 min)* → `rendu/05-notes-ia.md`
+### Partie E. Comment tu as piloté l'assistant *(≈ 10 min)* → `rendu/05-notes-ia.md`
 
 Court et honnête. Quel outil, ce que tu lui as confié, ce que tu as refait à la main, et **au
 moins un endroit précis où tu as rejeté ou corrigé ce qu'il proposait, avec pourquoi.**
@@ -181,27 +181,13 @@ Si tu n'as utilisé aucun assistant, dis-le et explique ce choix. C'est une rép
    du rendu : il nous montre ton ordre de travail.
 4. Quand tu as fini, réponds au mail avec le lien du repository.
 
-Si un point de plomberie te bloque plus de dix minutes — Docker, base de données,
-dépendances — note-le dans ton rendu et contourne-le. Ça ne fait pas partie de ce qu'on évalue,
+Si un problème d'installation te bloque plus de dix minutes (Docker, base de données,
+dépendances), note-le dans ton rendu et contourne-le. Ça ne fait pas partie de ce qu'on évalue,
 et la façon dont tu contournes nous en dit plus que la façon dont tu t'acharnes.
 
 ---
 
-## 5. Ce qui se passe ensuite
-
-Un entretien d'une heure, en visio ou chez nous :
-
-- On choisit nous-mêmes deux ou trois morceaux de ton code et on te demande de les expliquer.
-  On prendra probablement ceux qui ont le plus l'air générés.
-- On revient sur ton cadrage et sur ce que tu n'as pas demandé.
-- On change une contrainte du cas et tu adaptes ton plan à voix haute.
-
-Ce n'est pas un piège : c'est la même conversation qu'on aurait sur un vrai projet, une semaine
-après le kick-off.
-
----
-
-## 6. Ce qu'on évalue, et ce qu'on n'évalue pas
+## 5. Ce qu'on évalue, et ce qu'on n'évalue pas
 
 | On regarde | Ce que ça veut dire |
 | --- | --- |
