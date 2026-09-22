@@ -24,9 +24,22 @@ Entreprise familiale, 45 employés, environ 22M EUR de chiffre d'affaires, renta
 croissance d'environ 8 % par an. Catalogue d'environ 8.000 SKU actifs. Les clients utilisent
 rarement les noms officiels des produits.
 
-Environ 120 commandes arrivent chaque jour, par email en texte libre, par PDF joint, par
-téléphone et par photo WhatsApp. Trois personnes au desk commandes les retapent à la main
-dans l'ERP.
+Environ 120 commandes arrivent chaque jour, via quatre canaux : email en texte libre vers
+`orders@` (environ 60 %), PDF ou formulaire scanné en pièce jointe (15 %), téléphone (20 %),
+photos WhatsApp de notes manuscrites (5 %).
+
+Trois personnes au desk commandes retapent chaque commande dans l'ERP. Elles mettent en
+moyenne 4 minutes par commande, soit environ 6 heures de travail par jour au total.
+
+### Où ça fait mal
+
+- Le cut-off pour une livraison le lendemain est 17h00. Les commandes qui arrivent après
+  15h30 le manquent souvent parce que le desk est saturé. Environ 15 commandes par jour
+  manquent le cut-off et partent un jour plus tard.
+- Environ 5 % des commandes arrivent à l'entrepôt avec au moins une ligne fausse : mauvais
+  SKU, mauvaise quantité ou mauvais conditionnement. Chaque erreur leur coûte environ 40 EUR
+  en logistique retour, traitement de note de crédit et appel.
+- Deux clients sont partis l'année dernière en citant les retards de livraison.
 
 ### Ce que le client demande
 
@@ -39,12 +52,13 @@ Extrait de l'appel de cadrage avec leur directeur commercial :
 
 ### Ce qu'on sait déjà
 
-Nous avons passé 75 minutes au téléphone avec eux. Le compte rendu de cet appel est dans
-[`FAITS-CLIENT.md`](FAITS-CLIENT.md). **Lis-le avant de commencer.** Il contient des faits,
-pas des conclusions.
+Nous avons eu 45 minutes au téléphone avec eux, et l'appel a été écourté. Le compte rendu
+est dans [`FAITS-CLIENT.md`](FAITS-CLIENT.md). **Lis-le avant de commencer.** Il contient des
+faits, pas des conclusions.
 
-Tu y trouveras probablement des réponses que tu n'aurais pas pensé à demander, et il te
-manquera des choses. Les deux comptent pour la suite.
+Il est incomplet, et volontairement. Une partie de ce qui te manque se trouve ailleurs dans
+le repository, une autre partie n'existe nulle part et ne peut que se demander au client.
+Savoir dans quelle catégorie tombe chaque trou fait partie de l'exercice.
 
 ---
 
