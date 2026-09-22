@@ -1,6 +1,6 @@
 import "dotenv/config";
 
-import { DEFAULT_MODEL, anthropic } from "../lib/anthropic";
+import { DEFAULT_MODEL, anthropic } from "../src/lib/anthropic";
 
 async function main() {
   if (!process.env.ANTHROPIC_API_KEY) {

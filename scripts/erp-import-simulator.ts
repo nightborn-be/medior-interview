@@ -13,7 +13,7 @@ import path from "node:path";
 
 import cron from "node-cron";
 
-import { db, schema, sql } from "../lib/db";
+import { db, schema, sql } from "../src/lib/db";
 
 /**
  * Simulateur du job d'import de l'ERP.

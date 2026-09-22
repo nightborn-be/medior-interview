@@ -2,7 +2,7 @@ import "dotenv/config";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 
-import { db, schema, sql } from "../lib/db";
+import { db, schema, sql } from "../src/lib/db";
 
 /**
  * Date de reference du jeu de donnees : les emails de data/inbox/ sont dates

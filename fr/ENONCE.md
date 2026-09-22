@@ -74,7 +74,7 @@ Tout est déjà en place. Tu n'as rien à installer ni à configurer.
 | `data/inbox/` | Les mêmes commandes dans leur format d'origine : emails, un PDF joint, une photo de note manuscrite |
 | `fr/erp-import-spec.md` | La spécification du dossier d'import de l'ERP |
 | `scripts/erp-import-simulator.ts` | Un simulateur du job d'import de l'ERP |
-| `lib/db/schema.ts` | Clients, produits, historique de commandes sur 6 mois |
+| `src/lib/db/schema.ts` | Clients, produits, historique de commandes sur 6 mois |
 | `fr/annexe-plan-exemple.md` | Un plan de build Nightborn complet, sur un autre projet |
 
 Le démarrage tient en une commande, voir le [README](../README.md).

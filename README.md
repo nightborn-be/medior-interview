@@ -51,7 +51,7 @@ around it.
 | `data/lignes-transcrites.json` | The 8 orders, transcribed exactly as the customers wrote them |
 | `data/inbox/` | The same orders in their original format: emails, one attached PDF, one photo |
 | `scripts/` | Setup, seed, reset, ERP simulator |
-| `app/`, `components/ui/`, `lib/` | The Next.js application |
+| `src/` | The Next.js application: `src/app/`, `src/components/ui/`, `src/lib/` |
 | `drizzle/` | Migrations |
 | `erp/` | Drop, processed and rejected folders for the ERP simulator |
 | `tests/` | Vitest tests |
@@ -84,7 +84,7 @@ date the customer mentioned, and `recu_le` the time it arrived.
 `data/inbox/`: 8 plain-text `.eml` files. Attachments are separate files carrying the same
 numeric prefix as the email (`06-*`, `07-*`) and are also named in the `X-Attachment` header.
 
-Database (`lib/db/schema.ts`):
+Database (`src/lib/db/schema.ts`):
 
 - `customers` : 40 customers. The senders of the 8 orders are among them.
 - `products` : the 300 SKUs from `data/catalog.csv`.
@@ -119,7 +119,7 @@ from `ERP_DROP_DIR`, `ERP_PROCESSED_DIR`, `ERP_REJECTED_DIR` and `ERP_LOG_DIR`.
 ## Calling a model (optional)
 
 The exercise requires no model call at all. If you want to make one anyway, the Anthropic SDK is
-installed and the client is in `lib/anthropic.ts`. Set `ANTHROPIC_API_KEY` in `.env`, then:
+installed and the client is in `src/lib/anthropic.ts`. Set `ANTHROPIC_API_KEY` in `.env`, then:
 
 ```bash
 pnpm hello-claude
@@ -135,7 +135,7 @@ Without a key, everything else works normally.
 | `pnpm dev` | Development server |
 | `pnpm test` | Vitest tests |
 | `pnpm reset` | Puts the repository back to its initial state |
-| `pnpm db:generate` | Generates a migration from `lib/db/schema.ts` |
+| `pnpm db:generate` | Generates a migration from `src/lib/db/schema.ts` |
 | `pnpm db:migrate` | Applies the migrations |
 | `pnpm db:seed` | Reloads the data |
 | `pnpm erp:run-once` | One pass of the ERP import job |

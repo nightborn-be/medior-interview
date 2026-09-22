@@ -72,7 +72,7 @@ Everything is already set up. You have nothing to install or configure.
 | `data/inbox/` | The same orders in their original format: emails, one attached PDF, one photo of a handwritten note |
 | `en/erp-import-spec.md` | The specification of the ERP import folder |
 | `scripts/erp-import-simulator.ts` | A simulator of the ERP import job |
-| `lib/db/schema.ts` | Customers, products, 6 months of order history |
+| `src/lib/db/schema.ts` | Customers, products, 6 months of order history |
 | `en/build-plan-example.md` | A complete Nightborn build plan, from a different project |
 
 Getting started is a single command, see the [README](../README.md).
