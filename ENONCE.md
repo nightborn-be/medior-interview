@@ -4,12 +4,12 @@ Exercice développeur medior Nightborn, à faire chez toi.
 
 | | |
 | --- | --- |
-| **Effort attendu** | environ 2h30 |
+| **Effort attendu** | environ 3h |
 | **Délai** | 7 jours calendaires à partir de la réception de ce document |
 | **Outils** | tous, y compris les assistants IA. La façon dont tu les utilises fait partie de ce qu'on regarde |
 | **Rendu** | un repository GitHub privé, auquel tu nous invites |
 
-**Si tu dépasses 3 heures, arrête-toi et note où tu en étais.** Savoir s'arrêter et dire
+**Si tu dépasses 3h30, arrête-toi et note où tu en étais.** Savoir s'arrêter et dire
 ce qui reste fait partie de l'exercice. Un rendu incomplet et lucide vaut mieux qu'un rendu
 complet et flou.
 
@@ -86,7 +86,7 @@ un lecteur de PDF ou d'image.
 
 ## 3. Ce que tu rends
 
-Cinq fichiers dans `rendu/`, dont les squelettes sont déjà en place, plus le code.
+Six fichiers dans `rendu/`, dont les squelettes sont déjà en place, plus le code.
 
 ### Partie A. Cadrage *(≈ 20 min)* → `rendu/01-cadrage.md`
 
@@ -172,6 +172,16 @@ Si tu n'as utilisé aucun assistant, dis-le et explique ce choix. C'est une rép
 
 ---
 
+### Partie F. Ton expérience technique *(≈ 25 min)* → `rendu/06-experience-technique.md`
+
+Rien à voir avec le cas Steenland. On veut savoir ce que tu as déjà construit et comment.
+
+Une page au total, pas plus. Court et précis vaut mieux que long et lisse, et on préfère deux
+expériences réelles à six survolées. **On reviendra sur ce que tu écris là pendant l'entretien**,
+donc ne raconte que des choses que tu peux détailler à voix haute.
+
+---
+
 ## 4. Comment tu rends
 
 1. Depuis le repository qu'on t'a envoyé, clique sur **Use this template** et crée un
@@ -195,6 +205,7 @@ et la façon dont tu contournes nous en dit plus que la façon dont tu t'acharne
 | **Jugement sur la solution** | Tu choisis la chose la moins chère qui fait bouger ce chiffre, et tu défends le fait de ne pas construire le reste |
 | **Plan de build** | Les jours tombent juste avec le budget, les critères d'acceptation sont vérifiables, les risques meurent tôt, et ce qui est écarté est écrit |
 | **Contrôle de ce que tu produis** | Le code que tu rends est vérifiable par quelqu'un d'autre, et tu sais où il casse |
+| **Profondeur technique** | Tu peux détailler ce que tu as construit avant, au niveau de la décision et pas du récit |
 | **Lucidité** | Tu sais ce que tu ne sais pas, et ce que ton code ne fait pas |
 
 **Non évalué :** connaître notre stack, des algorithmes par cœur, la beauté du code, tout
