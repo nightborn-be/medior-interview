@@ -10,7 +10,7 @@ and no recommendation.
 **The call was cut short, the director had to leave.** We did not cover everything we wanted to.
 Anything not written here was not discussed.
 
-*Version française : [`FAITS-CLIENT.md`](FAITS-CLIENT.md).*
+*Version française : [`fr/FAITS-CLIENT.md`](../fr/FAITS-CLIENT.md).*
 
 ---
 

@@ -1,6 +1,6 @@
 # Part C. Build plan
 
-*About 40 minutes. Nightborn format, `docs/build-plan-example.en.md` shows a filled-in one.*
+*About 40 minutes. Nightborn format, `en/build-plan-example.md` shows a filled-in one.*
 
 ## Header
 

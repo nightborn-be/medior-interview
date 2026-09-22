@@ -17,7 +17,7 @@ import { db, schema, sql } from "../lib/db";
 
 /**
  * Simulateur du job d'import de l'ERP.
- * Le comportement attendu est decrit dans docs/erp-import-spec.md.
+ * Le comportement attendu est decrit dans erp-import-spec.md (en/ ou fr/).
  */
 
 const root = process.cwd();

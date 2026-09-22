@@ -1,23 +1,24 @@
 # Steenland Foodservice
 
-> **Tu viens d'arriver ici ?** L'exercice est dans **[`ENONCE.md`](ENONCE.md)**. Lis-le en
-> premier, puis le compte rendu de l'appel client dans [`FAITS-CLIENT.md`](FAITS-CLIENT.md).
-> Tes réponses vont dans le dossier [`rendu/`](rendu/), dont les squelettes sont déjà en place.
+> **Start here.** The exercise exists in two languages. Pick one and stay in it.
+>
+> - **English** → [`en/EXERCISE.md`](en/EXERCISE.md), then [`en/CLIENT-FACTS.md`](en/CLIENT-FACTS.md). Your answers go in [`en/answers/`](en/answers/).
+> - **Français** → [`fr/ENONCE.md`](fr/ENONCE.md), puis [`fr/FAITS-CLIENT.md`](fr/FAITS-CLIENT.md). Tes réponses vont dans [`fr/rendu/`](fr/rendu/).
+>
+> Fill in **one** of the two answer folders, not both. Leave the other one as it is.
 
-*English version: [`README.en.md`](README.en.md).*
-
-Ce README ne documente que la technique : comment démarrer, ce qu'il y a où, quelles commandes
-existent.
+This README only documents the technical side: how to start, what lives where, which commands
+exist. Every path below is relative to the root of the repository.
 
 Next.js (App Router) + TypeScript, PostgreSQL via Docker, Drizzle ORM, Tailwind + shadcn/ui.
 
-## Prérequis
+## Requirements
 
-- Node 20 ou plus
+- Node 20 or later
 - pnpm
-- Docker (avec `docker compose`)
+- Docker (with `docker compose`)
 
-## Démarrage
+## Getting started
 
 ```bash
 pnpm install
@@ -27,117 +28,125 @@ pnpm install
 pnpm run setup
 ```
 
-`setup` copie `.env.example` vers `.env` si besoin, démarre PostgreSQL, applique les migrations
-et charge les données. Note : `pnpm setup` sans `run` est une commande interne de pnpm, il faut
-donc écrire `pnpm run setup`.
+`setup` copies `.env.example` to `.env` if needed, starts PostgreSQL, applies the migrations and
+loads the data. Note: `pnpm setup` without `run` is an internal pnpm command, so you have to
+write `pnpm run setup`.
 
 ```bash
 pnpm dev
 ```
 
-L'application écoute sur http://localhost:3000 et affiche la boîte de réception `orders@` : les
-8 commandes de `data/inbox/`, avec leur contenu brut et leurs pièces jointes.
+The application listens on http://localhost:3000 and shows the `orders@` inbox: the 8 orders
+from `data/inbox/`, with their raw content and their attachments.
 
-Si un problème d'installation te bloque plus de dix minutes, note-le dans ton rendu et
-contourne-le.
+If a setup problem blocks you for more than ten minutes, write it down in your answers and work
+around it.
 
-## Contenu du repository
+## Repository contents
 
-| Chemin | Contenu |
+| Path | Contents |
 | --- | --- |
-| `ENONCE.md` | L'exercice |
-| `FAITS-CLIENT.md` | Compte rendu de l'appel de cadrage avec le client |
-| `rendu/` | Les fichiers que tu remplis |
-| `data/catalog.csv` | Catalogue produits, 300 SKU |
-| `data/lignes-transcrites.json` | Les 8 commandes, transcrites telles que les clients les ont écrites |
-| `data/inbox/` | Les mêmes commandes dans leur format d'origine : emails, un PDF joint, une photo |
-| `docs/erp-import-spec.md` | Spécification du dossier d'import de l'ERP |
-| `docs/annexe-plan-exemple.md` | Un plan de build Nightborn complet, sur un autre projet |
-| `scripts/` | Setup, seed, reset, simulateur ERP |
-| `app/`, `components/ui/`, `lib/` | L'application Next.js |
+| `en/`, `fr/` | The same documents in English and in French: the exercise, the client call notes, the ERP specification, the build plan example, and the answer templates |
+| `data/catalog.csv` | Product catalogue, 300 SKUs |
+| `data/lignes-transcrites.json` | The 8 orders, transcribed exactly as the customers wrote them |
+| `data/inbox/` | The same orders in their original format: emails, one attached PDF, one photo |
+| `scripts/` | Setup, seed, reset, ERP simulator |
+| `app/`, `components/ui/`, `lib/` | The Next.js application |
 | `drizzle/` | Migrations |
-| `erp/` | Dossiers de dépôt, de traitement et de rejet du simulateur ERP |
-| `tests/` | Tests Vitest |
+| `erp/` | Drop, processed and rejected folders for the ERP simulator |
+| `tests/` | Vitest tests |
 
-## Données
+Inside each language folder:
 
-`data/catalog.csv` : `sku_code`, `description_nl`, `description_fr`, `packaging`, `unit`,
-`category`. Séparateur virgule, encodage UTF-8.
+| `en/` | `fr/` |
+| --- | --- |
+| `EXERCISE.md` | `ENONCE.md` |
+| `CLIENT-FACTS.md` | `FAITS-CLIENT.md` |
+| `erp-import-spec.md` | `erp-import-spec.md` |
+| `build-plan-example.md` | `annexe-plan-exemple.md` |
+| `answers/` | `rendu/` |
 
-`data/lignes-transcrites.json` : les lignes des 8 commandes, telles quelles, avec le code client
-et la mention de livraison quand il y en a une. Aucun rapprochement avec le catalogue n'a été
-fait.
+## Data
 
-`data/inbox/` : 8 fichiers `.eml` en texte brut. Les pièces jointes sont des fichiers séparés
-qui portent le même préfixe numérique que l'email (`06-*`, `07-*`) et sont aussi nommées dans
-l'en-tête `X-Attachment`.
+The data is **not** translated. The product descriptions and the customer orders are in Dutch and
+French because that is what the customers actually write, and that multilingual catalogue is the
+real difficulty of the case.
 
-Base de données (`lib/db/schema.ts`) :
+`data/catalog.csv`: `sku_code`, `description_nl`, `description_fr`, `packaging`, `unit`,
+`category`. Comma separated, UTF-8.
 
-- `customers` : 40 clients. Les expéditeurs des 8 commandes y figurent.
-- `products` : les 300 SKU de `data/catalog.csv`.
-- `order_history` / `order_history_lines` : 6 mois d'historique de commandes.
-- `erp_orders` : lignes avalées par le simulateur d'import de l'ERP.
+`data/lignes-transcrites.json`: the lines of the 8 orders, as written, with the customer code and
+the delivery mention when there is one. No match against the catalogue has been made. The field
+names are French: `commandes` are the orders, `lignes` the order lines, `client` the customer
+name, `langue` the language, `fichier_source` the original file, `mention_livraison` any delivery
+date the customer mentioned, and `recu_le` the time it arrived.
 
-Les commandes d'exemple sont datées du 27 août 2026 et l'historique couvre les six mois qui
-précèdent cette date.
+`data/inbox/`: 8 plain-text `.eml` files. Attachments are separate files carrying the same
+numeric prefix as the email (`06-*`, `07-*`) and are also named in the `X-Attachment` header.
 
-## Simulateur d'import ERP
+Database (`lib/db/schema.ts`):
 
-`scripts/erp-import-simulator.ts` joue le rôle du job d'import décrit dans
-`docs/erp-import-spec.md`. Il surveille un dossier de dépôt, valide les fichiers qui s'y
-trouvent, écrit les lignes acceptées dans la table `erp_orders`, déplace les fichiers acceptés
-vers `erp/processed/` et les fichiers refusés vers `erp/rejected/` accompagnés d'un journal de
-rejet.
+- `customers` : 40 customers. The senders of the 8 orders are among them.
+- `products` : the 300 SKUs from `data/catalog.csv`.
+- `order_history` / `order_history_lines` : 6 months of order history.
+- `erp_orders` : lines swallowed by the ERP import simulator.
 
-Un passage à la demande :
+The sample orders are dated 27 August 2026 and the history covers the six months before that
+date.
+
+## ERP import simulator
+
+`scripts/erp-import-simulator.ts` plays the role of the import job described in
+`en/erp-import-spec.md`. It watches a drop folder, validates the files it finds there, writes
+accepted lines into the `erp_orders` table, moves accepted files to `erp/processed/` and rejected
+files to `erp/rejected/` along with a rejection log.
+
+A single pass on demand:
 
 ```bash
 pnpm erp:run-once
 ```
 
-En continu, selon la planification :
+Continuously, on schedule:
 
 ```bash
 pnpm erp:simulator
 ```
 
-La planification vient de `ERP_IMPORT_CRON` dans `.env` (valeur par défaut : `0 23 * * *`). Les
-chemins des dossiers viennent de `ERP_DROP_DIR`, `ERP_PROCESSED_DIR`, `ERP_REJECTED_DIR` et
-`ERP_LOG_DIR`.
+The schedule comes from `ERP_IMPORT_CRON` in `.env` (default: `0 23 * * *`). The folder paths come
+from `ERP_DROP_DIR`, `ERP_PROCESSED_DIR`, `ERP_REJECTED_DIR` and `ERP_LOG_DIR`.
 
-## Appeler un modèle (optionnel)
+## Calling a model (optional)
 
-L'exercice ne demande aucun appel à un modèle. Si tu veux quand même en faire, le SDK Anthropic
-est installé et le client est dans `lib/anthropic.ts`. Renseigne `ANTHROPIC_API_KEY` dans `.env`,
-puis :
+The exercise requires no model call at all. If you want to make one anyway, the Anthropic SDK is
+installed and the client is in `lib/anthropic.ts`. Set `ANTHROPIC_API_KEY` in `.env`, then:
 
 ```bash
 pnpm hello-claude
 ```
 
-Sans clé, tout le reste fonctionne normalement.
+Without a key, everything else works normally.
 
-## Commandes
+## Commands
 
-| Commande | Effet |
+| Command | Effect |
 | --- | --- |
-| `pnpm run setup` | Base de données, migrations, données |
-| `pnpm dev` | Serveur de développement |
-| `pnpm test` | Tests Vitest |
-| `pnpm reset` | Remet le repository dans son état initial |
-| `pnpm db:generate` | Génère une migration à partir de `lib/db/schema.ts` |
-| `pnpm db:migrate` | Applique les migrations |
-| `pnpm db:seed` | Recharge les données |
-| `pnpm erp:run-once` | Un passage du job d'import de l'ERP |
-| `pnpm erp:simulator` | Job d'import de l'ERP en continu |
-| `pnpm hello-claude` | Appel d'exemple à l'API Anthropic (nécessite une clé) |
+| `pnpm run setup` | Database, migrations, data |
+| `pnpm dev` | Development server |
+| `pnpm test` | Vitest tests |
+| `pnpm reset` | Puts the repository back to its initial state |
+| `pnpm db:generate` | Generates a migration from `lib/db/schema.ts` |
+| `pnpm db:migrate` | Applies the migrations |
+| `pnpm db:seed` | Reloads the data |
+| `pnpm erp:run-once` | One pass of the ERP import job |
+| `pnpm erp:simulator` | ERP import job, continuously |
+| `pnpm hello-claude` | Sample call to the Anthropic API (needs a key) |
 
-## Réinitialisation
+## Reset
 
 ```bash
 pnpm reset
 ```
 
-Recrée la base, rejoue les migrations et le seed, vide `erp/drop`, `erp/processed`,
-`erp/rejected` et `erp/logs`, et supprime le cache de build.
+Recreates the database, replays the migrations and the seed, empties `erp/drop`,
+`erp/processed`, `erp/rejected` and `erp/logs`, and deletes the build cache.

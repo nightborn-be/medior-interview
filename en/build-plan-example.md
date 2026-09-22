@@ -5,7 +5,7 @@ precision we expect on acceptance criteria. **Do not copy it line by line: the S
 has nothing to do with it, and in this example the client was right to ask for what they asked
 for.**
 
-*English translation of `annexe-plan-exemple.md`.*
+*English translation of [`fr/annexe-plan-exemple.md`](../fr/annexe-plan-exemple.md).*
 
 ---
 

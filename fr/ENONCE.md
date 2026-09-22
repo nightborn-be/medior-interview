@@ -2,7 +2,7 @@
 
 Exercice développeur medior Nightborn, à faire chez toi.
 
-*English version: [`EXERCISE.md`](EXERCISE.md). Réponds dans la langue que tu préfères.*
+*English version: [`en/EXERCISE.md`](../en/EXERCISE.md). Réponds dans la langue que tu préfères.*
 
 | | |
 | --- | --- |
@@ -72,12 +72,12 @@ Tout est déjà en place. Tu n'as rien à installer ni à configurer.
 | `data/catalog.csv` | 300 SKU, descriptions NL et FR, conditionnement, unité, catégorie |
 | `data/lignes-transcrites.json` | Les 8 commandes reçues le 27 août, transcrites telles que les clients les ont écrites |
 | `data/inbox/` | Les mêmes commandes dans leur format d'origine : emails, un PDF joint, une photo de note manuscrite |
-| `docs/erp-import-spec.md` | La spécification du dossier d'import de l'ERP |
+| `fr/erp-import-spec.md` | La spécification du dossier d'import de l'ERP |
 | `scripts/erp-import-simulator.ts` | Un simulateur du job d'import de l'ERP |
 | `lib/db/schema.ts` | Clients, produits, historique de commandes sur 6 mois |
-| `docs/annexe-plan-exemple.md` | Un plan de build Nightborn complet, sur un autre projet |
+| `fr/annexe-plan-exemple.md` | Un plan de build Nightborn complet, sur un autre projet |
 
-Le démarrage tient en une commande, voir le [README](README.md).
+Le démarrage tient en une commande, voir le [README](../README.md).
 
 **L'extraction n'est pas le sujet de cet exercice.** `data/lignes-transcrites.json` te donne
 les lignes déjà transcrites depuis les emails, le PDF et la photo. Pars de là. Les fichiers
@@ -88,9 +88,9 @@ un lecteur de PDF ou d'image.
 
 ## 3. Ce que tu rends
 
-Six fichiers dans `rendu/`, dont les squelettes sont déjà en place, plus le code.
+Six fichiers dans `fr/rendu/`, dont les squelettes sont déjà en place, plus le code.
 
-### Partie A. Cadrage *(≈ 20 min)* → `rendu/01-cadrage.md`
+### Partie A. Cadrage *(≈ 20 min)* → `fr/rendu/01-cadrage.md`
 
 Trois choses, courtes :
 
@@ -103,16 +103,16 @@ Le point 3 compte autant que les deux autres. On cherche une inconnue qui, si el
 mauvais côté, change ta décision, pas une liste d'accès à demander. Le compte rendu de
 l'appel ne répond pas à tout : ce qui te manque encore nous intéresse.
 
-### Partie B. Solution et recommandation *(≈ 20 min)* → `rendu/02-solution.md`
+### Partie B. Solution et recommandation *(≈ 20 min)* → `fr/rendu/02-solution.md`
 
 1. Deux ou trois options réellement différentes, y compris l'option de construire très peu.
 2. Un coût et un délai approximatifs par option.
 3. Ta recommandation, et pourquoi les autres perdent.
 4. Ce que tu dirais au directeur commercial, qui a demandé un webshop et une app.
 
-### Partie C. Plan de build *(≈ 40 min)* → `rendu/03-plan-de-build.md`
+### Partie C. Plan de build *(≈ 40 min)* → `fr/rendu/03-plan-de-build.md`
 
-Au format Nightborn. `docs/annexe-plan-exemple.md` t'en montre un exemplaire complet, sur un
+Au format Nightborn. `fr/annexe-plan-exemple.md` t'en montre un exemplaire complet, sur un
 autre client et un autre secteur. Il te montre la structure et le niveau de précision attendu
 sur les critères d'acceptation. Ne le recopie pas : son cas n'a rien à voir avec celui-ci, et
 dans cet exemple le client avait raison de demander ce qu'il demandait.
@@ -129,7 +129,7 @@ pas des intentions.
 deux destinations : le **hors périmètre**, avec la raison, et les **extensions possibles** en
 fin de plan, chiffrées, avec le moment où on décide.
 
-### Partie D. Du code, et ce que tu mets autour *(≈ 60 min)* → code + `rendu/04-code.md`
+### Partie D. Du code, et ce que tu mets autour *(≈ 60 min)* → code + `fr/rendu/04-code.md`
 
 **C'est la partie qu'on regarde le plus, et ce n'est pas la fonctionnalité qu'on note.**
 
@@ -159,13 +159,13 @@ codifiées pour ne pas les réexpliquer à chaque fois.
    qui a l'air propre parce qu'il a perdu ce qui l'embêtait ne compte pas comme terminé.
 4. **Le contexte que tu donnes à l'assistant est versionné avec le code**, il est spécifique à
    ce projet, et il aurait servi à quelqu'un d'autre que toi.
-5. **Tu sais énoncer tes limites** dans `rendu/04-code.md` : ce que ton code ne gère pas, et
+5. **Tu sais énoncer tes limites** dans `fr/rendu/04-code.md` : ce que ton code ne gère pas, et
    ce qui casserait si on changeait les données.
 
 Ce qu'on ne demande pas : traiter les 8 commandes, que ce soit joli, une couverture de tests
 complète, la performance, la sécurité, l'authentification.
 
-### Partie E. Comment tu as piloté l'assistant *(≈ 10 min)* → `rendu/05-notes-ia.md`
+### Partie E. Comment tu as piloté l'assistant *(≈ 10 min)* → `fr/rendu/05-notes-ia.md`
 
 Court et honnête. Quel outil, ce que tu lui as confié, ce que tu as refait à la main, et **au
 moins un endroit précis où tu as rejeté ou corrigé ce qu'il proposait, avec pourquoi.**
@@ -174,7 +174,7 @@ Si tu n'as utilisé aucun assistant, dis-le et explique ce choix. C'est une rép
 
 ---
 
-### Partie F. Ton expérience technique *(≈ 25 min)* → `rendu/06-experience-technique.md`
+### Partie F. Ton expérience technique *(≈ 25 min)* → `fr/rendu/06-experience-technique.md`
 
 Rien à voir avec le cas Steenland. On veut savoir ce que tu as déjà construit et comment.
 

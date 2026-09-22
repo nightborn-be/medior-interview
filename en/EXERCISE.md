@@ -2,7 +2,7 @@
 
 Nightborn medior developer exercise, to be done at home.
 
-*Version française : [`ENONCE.md`](ENONCE.md). Answer in whichever language you prefer.*
+*Version française : [`fr/ENONCE.md`](../fr/ENONCE.md). Answer in whichever language you prefer.*
 
 | | |
 | --- | --- |
@@ -70,12 +70,12 @@ Everything is already set up. You have nothing to install or configure.
 | `data/catalog.csv` | 300 SKUs, Dutch and French descriptions, packaging, unit, category |
 | `data/lignes-transcrites.json` | The 8 orders received on 27 August, transcribed exactly as the customers wrote them |
 | `data/inbox/` | The same orders in their original format: emails, one attached PDF, one photo of a handwritten note |
-| `docs/erp-import-spec.en.md` | The specification of the ERP import folder |
+| `en/erp-import-spec.md` | The specification of the ERP import folder |
 | `scripts/erp-import-simulator.ts` | A simulator of the ERP import job |
 | `lib/db/schema.ts` | Customers, products, 6 months of order history |
-| `docs/build-plan-example.en.md` | A complete Nightborn build plan, from a different project |
+| `en/build-plan-example.md` | A complete Nightborn build plan, from a different project |
 
-Getting started is a single command, see the [README](README.en.md).
+Getting started is a single command, see the [README](../README.md).
 
 **A note on the data files.** The product catalogue is in Dutch and French because that is what
 the customers write, and that is the actual difficulty of the case. It is not translated. The
@@ -93,9 +93,9 @@ reader.
 
 ## 3. What you hand in
 
-Six files in `answers/`, whose skeletons are already in place, plus the code.
+Six files in `en/answers/`, whose skeletons are already in place, plus the code.
 
-### Part A. Framing *(≈ 20 min)* → `answers/01-framing.md`
+### Part A. Framing *(≈ 20 min)* → `en/answers/01-framing.md`
 
 Three things, short:
 
@@ -108,16 +108,16 @@ Point 3 counts as much as the other two. We are looking for an unknown that chan
 decision if it lands the wrong way, not a list of accesses to request. The call notes do not
 answer everything: what is still missing is what interests us.
 
-### Part B. Solution and recommendation *(≈ 20 min)* → `answers/02-solution.md`
+### Part B. Solution and recommendation *(≈ 20 min)* → `en/answers/02-solution.md`
 
 1. Two or three genuinely different options, including the option of building very little.
 2. A rough cost and timeline for each.
 3. Your recommendation, and why the others lose.
 4. What you would say to the commercial director, who asked for a webshop and an app.
 
-### Part C. Build plan *(≈ 40 min)* → `answers/03-build-plan.md`
+### Part C. Build plan *(≈ 40 min)* → `en/answers/03-build-plan.md`
 
-In the Nightborn format. `docs/build-plan-example.en.md` shows you a complete one, for a
+In the Nightborn format. `en/build-plan-example.md` shows you a complete one, for a
 different client in a different sector. It shows you the structure and the level of precision
 we expect on acceptance criteria. Do not copy it line by line: that case has nothing to do with
 this one, and in that example the client was right to ask for what they asked for.
@@ -133,7 +133,7 @@ meaning things someone can tick or not tick at the end of the week, not intentio
 two destinations: **out of scope**, with the reason, and **possible extensions** at the end of
 the plan, costed, with the moment the decision gets made.
 
-### Part D. Code, and what you put around it *(≈ 60 min)* → code + `answers/04-code.md`
+### Part D. Code, and what you put around it *(≈ 60 min)* → code + `en/answers/04-code.md`
 
 **This is the part we look at most, and the feature is not what we score.**
 
@@ -162,13 +162,13 @@ them again every time.
    clean because it dropped whatever was inconvenient does not count as done.
 4. **The context you give the assistant is versioned with the code**, it is specific to this
    project, and it would have been useful to someone other than you.
-5. **You can state your limits** in `answers/04-code.md`: what your code does not handle, and
+5. **You can state your limits** in `en/answers/04-code.md`: what your code does not handle, and
    what would break if we changed the data.
 
 What we are not asking for: handling all 8 orders, making it pretty, full test coverage,
 performance, security, authentication.
 
-### Part E. How you drove the assistant *(≈ 10 min)* → `answers/05-ai-notes.md`
+### Part E. How you drove the assistant *(≈ 10 min)* → `en/answers/05-ai-notes.md`
 
 Short and honest. Which tool, what you handed to it, what you redid by hand, and **at least one
 specific place where you rejected or corrected what it proposed, and why.**
@@ -177,7 +177,7 @@ If you used no assistant at all, say so and explain the choice. That is a valid 
 
 ---
 
-### Part F. Your technical experience *(≈ 25 min)* → `answers/06-technical-experience.md`
+### Part F. Your technical experience *(≈ 25 min)* → `en/answers/06-technical-experience.md`
 
 Nothing to do with the Steenland case. We want to know what you have built before, and how.
 

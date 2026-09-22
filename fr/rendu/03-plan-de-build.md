@@ -1,6 +1,6 @@
 # Partie C. Plan de build
 
-*Environ 40 minutes. Format Nightborn. `docs/annexe-plan-exemple.md` en montre un rempli.*
+*Environ 40 minutes. Format Nightborn. `fr/annexe-plan-exemple.md` en montre un rempli.*
 
 ## En-tête
 

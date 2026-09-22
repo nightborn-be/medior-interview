@@ -5,7 +5,8 @@ IT department
 Reference: SPEC-ERP-IMP-014
 Version 1.3
 
-*English translation of `erp-import-spec.md`. In case of doubt, the French original prevails.*
+*English translation of [`fr/erp-import-spec.md`](../fr/erp-import-spec.md). In case of doubt,
+the French original prevails.*
 
 | Version | Date | Author | Subject |
 | --- | --- | --- | --- |

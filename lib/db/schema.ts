@@ -57,7 +57,7 @@ export const orderHistoryLines = pgTable(
   (table) => [index("order_history_lines_order_idx").on(table.orderId)],
 );
 
-/** Lignes avalees par le job d'import de l'ERP (voir docs/erp-import-spec.md). */
+/** Lignes avalees par le job d'import de l'ERP (voir erp-import-spec.md, en/ ou fr/). */
 export const erpOrders = pgTable("erp_orders", {
   id: serial("id").primaryKey(),
   sourceFile: varchar("source_file", { length: 200 }).notNull(),
